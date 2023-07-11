@@ -1,0 +1,30 @@
+/*appel élements html
+Par nom de balise*/
+h1{
+    color : red;
+}
+p { border: 1px solid grey;
+    margin: 5px;
+    min-height: 100px;
+    border-radius: 8px;
+    min-width: 300px;
+    width: 45%;
+    padding: 0 10px;
+}
+article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+/* par classe  */
+.titre_article {
+    font-style : italic;
+}
+/* par id  */
+#titre-sous-paragraphe{
+    transform: translateX(100px);
+}
