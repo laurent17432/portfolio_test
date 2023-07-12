@@ -1,3 +1,11 @@
-h1{
-    color : blue;
-}
+header,footer{height: 15vh;width:70%;}
+main{min-height: 90vh;height: 90vh; width: 100%;}
+#menu-principal{height: 15vh;background: rgb(98, 243, 231)}
+.icone-menu{border: 0;line-height: 0vh; padding: 0 1em;font-size: 1rem;text-align: center;color: #fff;text-shadow: 1px 1px 1px #e0dede9c; 
+    border-radius: 3px; background-color: rgb(98, 243, 231,0);padding : 1em 15vh; transition: 0.2s all;}
+    .icone-menu:hover {
+        background-color: rgb(111, 187, 238);
+    } 
+    .icone-menu:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }   
