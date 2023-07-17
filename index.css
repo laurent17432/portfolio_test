@@ -1,10 +1,14 @@
 header,footer{min-height : 55px ;
     height: 7vh;
     width:120vh;}
+body{
+    background-image : url(./images/fond-d-ecran-amas-coma.jpg)
+}
+h1,h2,p {color: white;}    
 main{min-height: 90vh;
     height: 90vh;
      width: 100%;}
-#menu-principal{min-height: 55px;
+#menu-principal{min-height: 55px; display: flex;
      height: 7vh;
      background: rgb(98, 243, 231)}
 .icone-menu{border: 0;
@@ -26,7 +30,7 @@ main{min-height: 90vh;
     }
 h1{position: absolute;left:30vh; top:15vh;text-align: center;}   
 h2{ font-size: 2em; text-align: center;} 
-#cadre-photo-profil{ height:22vh;width:22vh;border-image:none;border-style:solid;border-color:black;border-radius:50%;border-width:2px;overflow:hidden;}       
+#cadre-photo-profil{ height:22vh;width:22vh;margin:15px; border-image:none;border-style:solid;border-color:black;border-radius:50%;border-width:2px;overflow:hidden;}
 #photo-profil{height:22vh;width:22vh;}
 #titre-page{display: flex;align-items: center;justify-content: center;height:10vh;width:65%;color:blue;font-size: 2.5rem;background-color: grey;}
 .icones{height:18px;width:21px; margin:0 10px;}
