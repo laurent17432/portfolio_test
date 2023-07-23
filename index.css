@@ -13,9 +13,12 @@ body{font-family: Fenix;}
 p{font-style:italic;font-size:18px;}
 
 /*dimensionnement général de la page*/
-header,footer{min-height : 55px ;}
-header{height:14vh;}
-body{min-height:100vh;height:100vh;background-image : url(./images/fond-d-ecran-amas-coma.jpg);
+
+header{height:14vh; min-height:85px;
+}
+body{min-height:100vh;
+   /* height:100vh;*/
+    background-image : url(./images/fond-d-ecran-amas-coma.jpg);
     color: white;}   
 main{min-height: 76vh;
      width: 100%;}
@@ -32,12 +35,13 @@ main{min-height: 76vh;
      font-family: Fenix;
      font-size: 1rem;
      text-align: center;
+     line-height: 1.2rem;
      color: #fff;
      text-shadow: 1px 1px 1px #e0dede9c; 
      border-radius: 3px;
      background-color: rgb(98, 243, 231);
      padding :0vh  3vw; transition: 0.2s all;
-    overflow: hidden;}
+     overflow: hidden;}
     .icone-menu:visited,.menu-actif:visited{color:blue;}
     
     .icone-menu:hover,.menu-actif:hover {
@@ -51,12 +55,14 @@ main{min-height: 76vh;
 #en_tete{display:flex;align-items:center;}
 h1{ left:26vw;
      top:28vh;
+     min-height:50px;
      text-align: center;
-     margin-left: 48px;
+     margin: 0 48px;
     }   
-h2{ font-size: 2em; text-align: center;} 
+h2{ font-size: 2em; text-align: center; min-height:50px;} 
 #cadre-photo-profil{ height:28vh;
     width:28vh;
+    min-height:221px;min-width:221px;
     margin:15px 15px 15px 48px;
      border-image:none;
      border-style:solid;
@@ -64,7 +70,7 @@ h2{ font-size: 2em; text-align: center;}
      border-radius:50%;
      border-width:2px;
      overflow:hidden;}
-#photo-profil{height:28vh;width:28vh;}
+#photo-profil{height:28vh;width:28vh; min-height:221px;min-width:221px;}
 #titre-page,#titre-projet{display: flex;
     align-items: center;
     justify-content: center;
@@ -73,12 +79,12 @@ h2{ font-size: 2em; text-align: center;}
     color:#0500ff;
     font-size: 2.5rem;
     background-color: rgba(210,80,189,0.29);}
-#titre-projet{margin:2vh 10vw;width:75vw;}    
+#titre-projet{margin:0 10vw 2vh;width:75vw;}    
    
 p{display:flex;margin:auto;width:85vw;justify-content: center;}
 
 /*pied de page*/
-footer{height: 10vh;background :linear-gradient(rgba(255,249,229,0.17),rgba(255,7,7,0.53));    
+footer{height: 10vh; min-height:55px;background :linear-gradient(rgba(255,249,229,0.17),rgba(255,7,7,0.53));    
 }
-#pied-page{display:flex;height:10vh;min-height:55px ;align-items:center;}
+#pied-page{display:flex;min-height:55px ; height:10vh;align-items:center;}
 .icones{height:40px;width:48px; margin:0 4vw;align-items:center;}
