@@ -69,10 +69,8 @@ p
     }
     #photo-profil{ min-height:192px;min-width:192px;max-height: 320px;max-width:320px;}
     #titre-page,#titre-projet{font-size: 2.5rem;}
-    #titre-projet{margin:0 10vw 2vh;
-    top:24px;}
+    #titre-projet{margin:0 10vw 2vh;}
 }
 @media screen and (min-width: 1050px){
     #cadre-photo-profil{margin-top:48px;}
-    #titre-projet {top:48px;}
 }

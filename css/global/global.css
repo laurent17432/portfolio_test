@@ -13,6 +13,11 @@
 /*declaration des polices*/
     --font-size-title : max(6vmin,2rem);
     
+/*déclaration de tailles diverses*/
+    --taille-header-mq1 : calc(8vh + 24px);
+    --taille-header-mq2 : calc(8vh + 48px);
+    --taille-main-mq1 : calc(82vh - 24px);
+    --taille-main-mq2 : calc(82vh - 48px);
     
 }
 
@@ -31,3 +36,11 @@ main{
     min-height: 82vh;
      width: 100%;
     }
+ @media screen and (min-width : 770px){
+    header {height: var(--taille-header-mq1);}
+    main {min-height: var(--taille-main-mq1);}
+ }
+ @media screen and (min-width: 1050px){
+    header {height: var(--taille-header-mq2);}
+    main {min-height: var(--taille-main-mq2);}
+ }
