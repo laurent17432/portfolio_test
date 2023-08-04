@@ -3,43 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src ="/js/index.js" defer></script>
     <title>Mon portfolio-accueil</title>
-    <link rel = "stylesheet" href = "./reset.css">
-    <link rel = "stylesheet" href = "./index.css">
+    
 </head>
 <body>
-    <header>
-        <nav id = "menu-principal">
-            <button class ="menu-actif" onclick ="window.location.href =`./index.html`;" > Accueil</button>
-            <button class ="icone-menu" onclick ="window.location.href =`./pages/projets.html`;"> Mes projets</button>
-            <button class ="icone-menu" onclick ="window.location.href =`./pages/mon-reseau.html`;">A propos</button>
-            <button class ="icone-menu" onclick ="window.location.href =`https://cvdesignr.com/p/5b04bfa822584` ;" download ="lepoivre_laurent_cv"> Mon CV</button>
-            <button class ="icone-menu">Mon site</button>
-        </nav>
-    </header>
-    <main>
- <div id = "en_tete">       
-<div id="cadre-photo-profil">
-<img id="photo-profil" src = "./images/photo-profil.jpg" alt ="photo de profil">
-</div>
-<h1 id="titre-page"> Mon portfolio </h1>
-</div>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor nesciunt itaque est. Quod nihil ipsum nesciunt rem exercitationem repellat, nemo id assumenda perferendis natus voluptatum nisi fugit cum repellendus.<br>
-     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eaque vero error sint reiciendis optio officiis. Cupiditate sed incidunt vel ab dignissimos harum provident, dolor ut nam tempore atque obcaecati!</p>
+<header>
+    <nav id = "menu-principal">
+        <div id="hamburger">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+       </div>
+        <ul id="liste-liens">
+            <li><button class ="menu-actif" onclick ="window.location.href =`./index.html`;" > Accueil</button> </li>
+            <li><button class ="icone-menu" onclick ="window.location.href =`./pages/projets.html`;"> Mes projets</button></li>
+            <li><button class ="icone-menu" onclick ="window.location.href =`./pages/mon-reseau.html`;">A propos</button></li>
+            <li><button class ="icone-menu" onclick ="window.location.href =`https://cvdesignr.com/p/5b04bfa822584` ;" download ="lepoivre_laurent_cv"> Mon CV</button></li>
+            <li><button class ="icone-menu">Mon site</button></li>
+        </ul>
+        
+    </nav>
+</header>
 
-<h2 id="titre-projet"> mes projets</h2>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor nesciunt itaque est. Quod nihil ipsum nesciunt rem exercitationem repellat, nemo id assumenda perferendis natus voluptatum nisi fugit cum repellendus.<br>
-     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eaque vero error sint reiciendis optio officiis. Cupiditate sed incidunt vel ab dignissimos harum provident, dolor ut nam tempore atque obcaecati!</p>
-
-    </main>
+<main>
+    <div id = "en_tete">       
+       <div id="cadre-photo-profil">
+       <img id="photo-profil" src = "./images/photo-profil.jpg" alt ="photo de profil">
+       </div>
+    <h1 id="titre-page"> Mon portfolio </h1>
+    </div>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor nesciunt itaque est. Quod nihil ipsum nesciunt rem exercitationem repellat, nemo id assumenda perferendis natus voluptatum nisi fugit cum repellendus.<br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eaque vero error sint reiciendis optio officiis. Cupiditate sed incidunt vel ab dignissimos harum provident, dolor ut nam tempore atque obcaecati!</p>
+       
+    <h2 id="titre-projet"> mes projets</h2>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor nesciunt itaque est. Quod nihil ipsum nesciunt rem exercitationem repellat, nemo id assumenda perferendis natus voluptatum nisi fugit cum repellendus.<br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eaque vero error sint reiciendis optio officiis. Cupiditate sed incidunt vel ab dignissimos harum provident, dolor ut nam tempore atque obcaecati!</p>
+       
+</main>
     <footer>
-        <nav id="pied-page">
-Me contacter:
-<a href="https://twitter.com/kalindor62"><img class="icones" src="./images/Logo_of_Twitter.svg.png" alt="icone twitter" title="twitter"></a>
-<a href="mailto:lepoivre.laurent@gmail.com"><img class="icones" src="./images/logo-gmail.png" alt="icone gmail" title="gmail"></a>
-<a href="https://www.linkedin.com/in/laurent-lepoivre/"><img class="icones" src="./images/logo-linkedin.png" alt="icone linkedin" title="linkedin"></a>
-<a href="https://github.com/laurentlepoivre"><img class="icones" src="./images/logo-github.png" alt="icone github" title="github"></a>
+         <nav id="pied-page">
+       Me contacter:
+       <a href="https://twitter.com/kalindor62"><img class="icones" src="./images/Logo_of_Twitter.svg.png" alt="icone twitter" title="twitter"></a>
+       <a href="mailto:lepoivre.laurent@gmail.com"><img class="icones" src="./images/logo-gmail.png" alt="icone gmail" title="gmail"></a>
+       <a href="https://www.linkedin.com/in/laurent-lepoivre/"><img class="icones" src="./images/logo-linkedin.png" alt="icone linkedin" title="linkedin"></a>
+       <a href="https://github.com/laurentlepoivre"><img class="icones" src="./images/logo-github.png" alt="icone github" title="github"></a>
         </nav>
-    </footer>
+     </footer>
 </body>
 </html>

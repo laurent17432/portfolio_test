@@ -1,0 +1,78 @@
+/*disposition contenu de la page*/
+#en_tete{
+    display:flex;
+    align-items:center;
+}
+h1{ 
+    left:26vw;
+     top:28vh;
+     min-height:50px;
+     text-align: center;
+     margin: 0 3% 0 0;
+    }   
+h2{ 
+    font-size: 2em;
+    text-align: center;
+    min-height:50px;
+} 
+#cadre-photo-profil{
+    height:28vw;
+    width:28vw;
+    min-height:110px;
+    min-width:110px;
+    margin:15px 15px 15px 24px;
+    border-image:none;
+    border-style:solid;
+    border-color:black;
+    border-radius:50%;
+    border-width:2px;
+    overflow:hidden;
+    flex-shrink: 0;
+}
+#photo-profil{
+    height:28vw;
+    width:28vw;
+    min-height:110px;
+    min-width:110px;
+}
+#titre-page,#titre-projet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:6vh;
+    width:65vw;
+    color:#0500ff;
+    border-radius:8px;
+    font-size: max(6vmin,2rem);
+    line-height: 1.5rem;
+    background-color: rgba(210,80,189,0.29);
+}
+#titre-projet{position: relative;
+    top:1vh;
+    left:2vw;right:2vw;
+    margin:0 10vw 2vh;/*mettre des margin-top:0; pour remettre les pages sans curseurs, ou bien trouver une autre méthode*/
+    width:75vw;
+}
+p
+{font-style:italic;
+    font-size:18px;
+    display:flex;
+    margin:auto;
+    width:85vw;
+    justify-content: center;
+    color: white;
+}
+@media screen and (min-width : 770px){
+    #cadre-photo-profil{ min-height:192px;min-width:192px;
+        margin:15px 15px 15px 48px;
+        max-height: 320px;max-width:320px;
+    }
+    #photo-profil{ min-height:192px;min-width:192px;max-height: 320px;max-width:320px;}
+    #titre-page,#titre-projet{font-size: 2.5rem;}
+    #titre-projet{margin:0 10vw 2vh;
+    top:24px;}
+}
+@media screen and (min-width: 1050px){
+    #cadre-photo-profil{margin-top:48px;}
+    #titre-projet {top:48px;}
+}

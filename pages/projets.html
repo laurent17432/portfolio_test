@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio-accueil</title>
-    <link rel = "stylesheet" href = "../reset.css">
-    <link rel = "stylesheet" href = "../index.css">
+    <link rel = "stylesheet" href = "../css/index.css">
+    <script src ="../js/index.js" defer></script>
 </head>
 <body>
     <header>
         <div id = "menu-principal">
-            <button class ="icone-menu" onclick ="window.location.href =`../index.html`;" > Accueil</button>
-            <button class ="menu-actif" onclick ="window.location.href =`./projets.html`;"> Mes projets</button>
-            <button class ="icone-menu" onclick ="window.location.href =`./mon-reseau.html`;" >A propos</button>
-            <button class ="icone-menu" onclick ="window.location.href =`https://cvdesignr.com/p/5b04bfa822584` ;" download ="lepoivre_laurent_cv"> Mon CV</button>
-            <button class ="icone-menu">Mon site</button>
+            <div id="hamburger">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+           </div>
+           <ul id="liste-liens">
+            <li><button class ="icone-menu" onclick ="window.location.href =`../index.html`;" > Accueil</button></li>
+            <li><button class ="menu-actif" onclick ="window.location.href =`./projets.html`;"> Mes projets</button></li>
+            <li><button class ="icone-menu" onclick ="window.location.href =`./mon-reseau.html`;" >A propos</button></li>
+            <li><button class ="icone-menu" onclick ="window.location.href =`https://cvdesignr.com/p/5b04bfa822584` ;" download ="lepoivre_laurent_cv"> Mon CV</button></li>
+            <li><button class ="icone-menu">Mon site</button></li>
+            </ul>
         </div>
     </header>
     <main>

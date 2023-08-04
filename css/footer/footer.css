@@ -1,0 +1,18 @@
+/*pied de page*/
+footer{position:relative;
+    width:100%;
+    display:flex;
+    color: white;
+    height: 10vh;
+    min-height:55px;
+    background :linear-gradient(rgba(255,249,229,0.17),rgba(255,7,7,0.53));}
+#pied-page{
+    display:flex;
+    min-height:55px ;
+     height:10vh;
+     align-items:center;
+    }
+.icones{height:40px;
+    width:48px;
+     margin:0 4vw;
+     align-items:center;}

@@ -1,0 +1,21 @@
+/*Reset des paramètres css du navigateur*/
+@import url(./reset.css);
+/*import des différents fichiers css*/
+@import url(./global/global.css);
+@import url(./nav/nav.css);
+@import url(./main/main.css);
+@import url(./footer/footer.css);
+/*déclaration des polices*/
+@font-face {
+    font-family: Fenix;
+    src: url(../fonts/Fenix/Fenix.eot) format(eot),
+         url(../fonts/Fenix/Fenix.svg) format(svg),
+         url(../fonts/Fenix/Fenix.ttf) format(ttf),
+         url(../fonts/Fenix/Fenix.woff) format(woff),
+         url(../fonts/Fenix/Fenix.woff2) format(woff2);
+    font-weight:400;
+    font-style:normal;
+
+}
+/*import des autres fichiers*/
+

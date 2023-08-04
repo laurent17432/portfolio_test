@@ -1,0 +1,33 @@
+/*déclaration des variables globales*/
+:root {
+    /*déclarations des couleurs*/
+    --color-nav :rgb(98, 243, 231);
+    --color-button-back : rgb(111, 187, 238);
+    --color-title-back : rgba(210,80,189,0.29);
+    --color-title-font : rgb(5, 0, 255);
+    --color-footer-top : rgba(255,249,229,0.17);
+    --color-footer-bottom : rgba(255,7,7,0.53);
+    --color-shadow-1 : rgba(224, 222, 222, 0.6);
+    --color-button-shadow-1 : rgba(255, 255, 255, 0.6);
+    --color-button-shadow-2 : rgba(0, 0, 0, 0.6);
+/*declaration des polices*/
+    --font-size-title : max(6vmin,2rem);
+    
+    
+}
+
+/*dimensionnement général de la page*/
+
+header{
+    height:8vh; 
+    min-height:48px;
+}
+body{font-family: Fenix;
+    min-height:100vh;
+    background: url(../../images/fond-d-ecran-amas-coma.jpg) no-repeat fixed center;/*une image chargée en arrière plan, non répétée,couvrant tout le fond, fixée et centrée*/
+    background-size: cover;
+}   
+main{
+    min-height: 82vh;
+     width: 100%;
+    }
