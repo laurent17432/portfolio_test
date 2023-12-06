@@ -3,87 +3,7 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,31 +12,16 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
-ol,
-ul {
+ol,ul {
   list-style: none;
 }
-blockquote,
-q {
+blockquote,q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before,blockquote:after,q:before,q:after {
   content: "";
   content: none;
 }
@@ -133,6 +38,15 @@ table {
        url($lib/fonts/Fenix/Fenix.woff) format(woff),
        url($lib/fonts/Fenix/Fenix.woff2) format(woff2);
   font-weight:400;
+  font-style:normal;
+}
+@font-face {
+  font-family: Anson;
+  src: url($lib/fonts/Anson/anson-regular-webfont.eot) format(eot),
+       url($lib/fonts/Anson/anson-regular-webfont.svg) format(svg),
+       url($lib/fonts/Anson/anson-regular-webfont.ttf) format(ttf),
+       url($lib/fonts/Anson/anson-regular-webfont.woff) format(woff);
+  font-weight: 400;
   font-style:normal;
 }
 /*déclaration des variables globales*/
@@ -159,7 +73,8 @@ table {
 }
 
 *{
-    text-decoration: none;
+  text-decoration: none;
+  cursor: url('$lib/images/icons/fusee.png'), auto;
 }
 /*dimensionnement général de la page*/
 
@@ -169,7 +84,7 @@ header{
 }
 body{font-family: Fenix;
     min-height:100vh;
-    background: url($lib/images/fond-d-ecran-amas-coma.jpg) no-repeat fixed center;/*une image chargée en arrière plan, non répétée,couvrant tout le fond, fixée et centrée*/
+    background: url($lib/images/fond-ecran/fond-d-ecran-amas-coma.jpg) no-repeat fixed center;/*une image chargée en arrière plan, non répétée,couvrant tout le fond, fixée et centrée*/
     background-size: cover;
 }   
 main{

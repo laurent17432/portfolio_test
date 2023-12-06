@@ -6,7 +6,7 @@
 </script>
 <footer>
     <nav id="pied-page">
-  Me contacter:
+  Mes réseaux : 
   <a href="https://twitter.com/kalindor62"><img class="icones" src={twitter} alt="icone twitter" title="twitter"></a>
   <a href="mailto:lepoivre.laurent@gmail.com"><img class="icones" src={gmail} alt="icone gmail" title="gmail"></a>
   <a href="https://www.linkedin.com/in/laurent-lepoivre/"><img class="icones" src={linkedin} alt="icone linkedin" title="linkedin"></a>

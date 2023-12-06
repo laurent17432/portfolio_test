@@ -1,74 +1,32 @@
 <script>
-	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	let click = false;
-  let currentUrl = $page.url.pathname;
-	onMount(() => {
-		let hamburgerIcon = document.querySelector('#hamburger');
-		let navBar = document.querySelector('#liste-liens');
-		let navLiens = navBar.querySelectorAll('li');
-		hamburgerIcon.addEventListener('click', () => {
-			navBar.classList.toggle('actif');
-			hamburgerIcon.classList.toggle('croix');
-		});
-		navLiens.forEach((navLiens) => {
-			navLiens.addEventListener('click', () => {
-				navBar.classList.remove('actif');
-				hamburgerIcon.classList.toggle('croix');
-			});
-		});
-	});
-	function clicked() {
-		!click;
-	}
-  function handleClick(event) {
-    currentUrl = event.target.getAttribute('href');
+  	let currentUrl = $page.url.pathname;
+	let active = false;
+	function handleClick(event) {
+    	currentUrl = event.target.getAttribute('href');
+		active = false;
   }
 </script>
 
 <header>
-	<nav id="menu-principal">
-		{#if !click}
-			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<div id="hamburger" on:click={clicked}>
-				<span class="hamburger"></span>
-				<span class="hamburger"></span>
-				<span class="hamburger"></span>
-			</div>
-			<ul id="liste-liens">
-				<li><a class="icone-menu" class:menu-actif={currentUrl === '/'} on:click={handleClick} href="/">Accueil</a></li>
-				<li><a class="icone-menu" class:menu-actif={currentUrl === '/projets'} on:click={handleClick} href="/projets">Mes projets</a></li>
-				<li><a class="icone-menu" class:menu-actif={currentUrl === '/mon-reseau'} on:click={handleClick} href="/mon-reseau">A propos</a></li>
-				<li><a class="icone-menu" href="https://cvdesignr.com/p/5b04bfa822584" target="_blank" download="lepoivre_laurent_cv">Mon CV</a></li>
-				<li><a class="icone-menu" href="*">Mon site</a></li>
-			</ul>
-		{:else}
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<div id="hamburger" class="croix" on:click={clicked}>
-				<span class="hamburger"></span>
-				<span class="hamburger"></span>
-				<span class="hamburger"></span>
-			</div>
-			<ul id="liste-liens" class="actif">
-				<li><a class="icone-menu" class:menu-actif={currentUrl === '/'} on:click={handleClick} href="/">Accueil</a></li>
-				<li><a class="icone-menu" class:menu-actif={currentUrl === '/projets'} on:click={handleClick} href="/projets">Mes projets</a></li>
-				<li><a class="icone-menu" class:menu-actif={currentUrl === '/mon-reseau'} on:click={handleClick} href="/mon-reseau">A propos</a></li>
-				<li>
-					<a
-						class="icone-menu"
-						href="https://cvdesignr.com/p/5b04bfa822584"
-						target="_blank"
-						download="lepoivre_laurent_cv"
-					>
-						Mon CV</a
-					>
-				</li>
-				<li><a class="icone-menu" href="*">Mon site</a></li>
-			</ul>
-		{/if}
-	</nav>
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+<nav id="menu-principal">
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
+	<div id="hamburger" class:croix={active} on:click={() => (active = !active)}>
+		<span class="hamburger"></span>
+		<span class="hamburger"></span>
+		<span class="hamburger"></span>
+	</div>
+	<ul id="liste-liens" class:actif={active}>
+		<li><a class="icone-menu" class:menu-actif={currentUrl === '/'} on:click={handleClick} href="/">Accueil</a></li>
+		<li><a class="icone-menu" class:menu-actif={currentUrl === '/projets'} on:click={handleClick} href="/projets">Mes projets</a></li>
+		<li><a class="icone-menu" class:menu-actif={currentUrl === '/mon-reseau'} on:click={handleClick} href="/mon-reseau">A propos</a></li>
+        <li><a class="icone-menu" class:menu-actif={currentUrl === '/competences'} on:click={handleClick} href="/competences">Mes Atouts</a></li>
+        <li><a class="icone-menu" class:menu-actif={currentUrl === '/contact'} on:click={handleClick} href="/contact">Me contacter</a></li>
+		<li><a class="icone-menu" href="https://cvdesignr.com/p/5b04bfa822584" target="_blank" download="lepoivre_laurent_cv">Mon CV</a></li>
+		<li><a class="icone-menu" href="*">Mon site</a></li>
+	</ul>
+</nav>
 </header>
 
 <style>
@@ -87,8 +45,9 @@
 		display: flex;
 		flex-direction: column;
 		width: 100vw;
-		top: -50vh;
+		top: -80vh;
 		justify-content: right;
+		transition: 1s ease-out;
 	}
 	#menu-principal ul.actif {
 		position: absolute;
@@ -115,7 +74,8 @@
 		border: 0;
 		height: 8vh;
 		width: 50vw;
-		font-family: Fenix;
+		font-family: Anson;
+		text-transform: uppercase;
 		font-size: 1.8rem;
 		text-align: center;
 		align-items: center;
@@ -154,7 +114,7 @@
 		height: 50px;
 		width: 50px;
 	}
-	.croix :first-child {
+    .croix :first-child {
 		transform-origin: left;
 		transform: translateY(-8.2px) rotate(45deg);
 		transition: 0.2s ease-out !important;
@@ -209,3 +169,5 @@
 		}
 	}
 </style>
+
+
