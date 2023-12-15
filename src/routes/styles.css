@@ -84,8 +84,6 @@ header{
 }
 body{font-family: Fenix;
     min-height:100vh;
-    background: url($lib/images/fond-ecran/fond-d-ecran-amas-coma.jpg) no-repeat fixed center;/*une image chargée en arrière plan, non répétée,couvrant tout le fond, fixée et centrée*/
-    background-size: cover;
 }   
 main{
     min-height: 82vh;

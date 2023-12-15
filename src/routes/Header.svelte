@@ -1,10 +1,12 @@
 <script>
 	import { page } from '$app/stores';
+	import { backgroundReload } from './astro';
   	let currentUrl = $page.url.pathname;
 	let active = false;
 	function handleClick(event) {
     	currentUrl = event.target.getAttribute('href');
 		active = false;
+		backgroundReload();
   }
 </script>
 
